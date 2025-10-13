@@ -3,6 +3,7 @@ sphinx>=1.4
 nbsphinx
 ipykernel
 numpy
+joblib
 matplotlib
 twixtools
 ipywidgets
