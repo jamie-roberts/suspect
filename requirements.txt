@@ -3,7 +3,11 @@ sphinx>=1.4
 nbsphinx
 ipykernel
 numpy
+matplotlib
+twixtools
+ipywidgets
 lmfit
+pandas
 pydicom
 parsley
 scipy
