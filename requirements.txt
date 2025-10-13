@@ -4,6 +4,7 @@ nbsphinx
 ipykernel
 numpy
 joblib
+jupyterlab
 matplotlib
 twixtools
 ipywidgets
