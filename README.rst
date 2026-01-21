@@ -6,15 +6,13 @@ Suspect is a Python package for processing MR spectroscopy data. It supports rea
 Installation (On Linux)
 ^^^^^^^^^^^^
 
-# Dev installation
+# Dev installation (python 3.12 for now)
 
 git clone https://github.com/jamie-roberts/suspect.git
 
 cd suspect
 
 python3 -m venv --upgrade-deps .venv
-
-.venv/bin/pip install jupyterlab
 
 .venv/bin/pip install -r requirements.txt
 
