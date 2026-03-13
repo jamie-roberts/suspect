@@ -16,9 +16,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Upgrade packaging tools
 RUN python -m pip install --upgrade pip setuptools wheel
 
-# Install JupyterLab
-RUN pip install jupyterlab
-
 # Install your fork of suspect directly from GitHub
 RUN pip install git+https://github.com/jamie-roberts/suspect.git
 
