@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "suspect"
+version = ["version"]
+description = "Magnetic resonance spectroscopy analysis tools"
+readme = { file = "README.rst", content-type = "text/x-rst" }
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "bennyrowland", email = "bennyrowland@mac.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "PyWavelets",
+    "scipy",
+    "numpy",
+    "lmfit",
+    "pydicom",
+    "parsley",
+    "pandas",
+    "parse",
+    "nibabel",
+    "joblib",
+    "twixtools",
+]
+
+[project.urls]
+Homepage = "https://github.com/bennyrowland/suspect"
+Repository = "https://github.com/bennyrowland/suspect.git"
+
+[project.optional-dependencies]
+notebook = [
+    "ipykernel",
+    "jupyterlab",
+    "matplotlib",
+    "ipywidgets",
+]
+test = [
+    "pytest",
+    "mock",
+    "numpydoc",
+]
+docs = [
+    "sphinx>=1.4",
+    "nbsphinx",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "suspect._version.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["suspect*"]
